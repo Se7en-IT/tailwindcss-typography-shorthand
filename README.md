@@ -1,0 +1,1 @@
+### Tailwindcss Typography Shorthand
