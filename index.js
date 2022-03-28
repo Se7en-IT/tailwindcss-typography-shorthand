@@ -1,6 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = plugin(function ({ addComponents, e, config }) {
+    const prefix = "typog"
     const fontSizes = Object.entries(config('theme.fontSize'))
     const fontWeights = Object.entries(config('theme.fontWeight'))
     const fontFamilies = Object.entries(config('theme.fontFamily'))
@@ -13,9 +14,9 @@ module.exports = plugin(function ({ addComponents, e, config }) {
             if (Array.isArray(sizeValue)) {
                 baseStyle.lineHeight = sizeValue[1]
             }
-            memo[`.${e(`typo-${sizeKey}-${weightKey}`)}`] = baseStyle
+            memo[`.${e(`${prefix}-${sizeKey}-${weightKey}`)}`] = baseStyle
             fontFamilies.forEach(([familyKey, familyValue]) => {
-                memo[`.${e(`typo-${sizeKey}-${weightKey}-${familyKey}`)}`] = {
+                memo[`.${e(`${prefix}-${sizeKey}-${weightKey}-${familyKey}`)}`] = {
                     ...baseStyle,
                     fontFamily: Array.isArray(familyValue) ? familyValue.join(', ') : familyValue
                 }
