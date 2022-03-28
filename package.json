@@ -1,16 +1,13 @@
 {
   "name": "tailwindcss-typography-shorthand",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tailwindcss Typography Shorthand",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Se7en-IT/tailwindcss-typography-shorthand.git"
   },
-  "author": "",
+  "author": "Luca Musolino",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Se7en-IT/tailwindcss-typography-shorthand/issues"
